@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.vb" Inherits="ElevenNote.WebApi.WebApiApplication" Language="VB" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="ElevenNote.WebApi.WebApiApplication" Language="C#" %>
