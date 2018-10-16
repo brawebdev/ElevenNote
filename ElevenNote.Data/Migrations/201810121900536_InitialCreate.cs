@@ -11,14 +11,14 @@ namespace ElevenNote.Data.Migrations
                 "dbo.Note",
                 c => new
                     {
-                        NoteID = c.Int(nullable: false, identity: true),
-                        OwnerID = c.Guid(nullable: false),
+                        NoteId = c.Int(nullable: false, identity: true),
+                        OwnerId = c.Guid(nullable: false),
                         Title = c.String(nullable: false),
                         Content = c.String(nullable: false),
                         CreatedUtc = c.DateTimeOffset(nullable: false, precision: 7),
                         ModifiedUtc = c.DateTimeOffset(precision: 7),
                     })
-                .PrimaryKey(t => t.NoteID);
+                .PrimaryKey(t => t.NoteId);
             
             CreateTable(
                 "dbo.IdentityRole",
